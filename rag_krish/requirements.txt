@@ -8,3 +8,4 @@ faiss-cpu
 chromadb
 langchain_groq
 python-dotenv
+typesense
