@@ -1,0 +1,94 @@
+Artificial Intelligence
+
+Artificial Intelligence as a Field: Goals, Methods, and Real-World Limits
+
+This document is designed as dummy source material for retrieval-augmented generation experiments.
+It contains overlapping terminology, repeated concepts, and enough depth to support chunking, retrieval,
+summarization, and question-answer evaluation without depending on domain secrets or proprietary
+content.
+
+Defining AI
+
+Artificial intelligence is the broad field concerned with building systems that perform tasks commonly
+associated with human intelligence. Those tasks include perception, language understanding, planning,
+decision-making, pattern recognition, and learning. AI is not one technique. It is an umbrella over many
+approaches, from rule-based expert systems to neural networks to probabilistic reasoning. The field
+changes its tools often, but the underlying aim remains similar: create systems that can act intelligently
+under uncertainty.
+
+In popular conversation, AI is often treated as if it were a single product category. That is sloppy thinking.
+A search ranking model, a fraud detector, a speech recognizer, a robotics planner, and a large language
+model are all forms of AI, but they solve different problems and rely on different assumptions. Collapsing
+them into one idea makes decisions worse because it hides the trade-offs that matter in practice.
+
+Historical waves
+
+AI has moved through several waves of optimism and disappointment. Early symbolic AI emphasized
+logic, search, and explicit knowledge representation. These systems worked well in constrained
+environments but struggled with ambiguity and scale. Later, statistical learning methods gained influence
+as larger datasets and greater compute made pattern-based approaches more practical. Deep learning
+then accelerated progress in vision, speech, and natural language by allowing models to learn
+high-dimensional representations directly from data.
+
+These waves did not replace each other cleanly. Modern AI often mixes them. A practical system may
+combine retrieval, search, optimization, hard-coded rules, learned ranking, and human oversight. The
+myth that one elegant technique will solve everything is mostly a marketing story. Real systems are
+messy because real environments are messy.
+Artificial Intelligence
+ Page 2
+
+Capabilities and limits
+
+AI can be astonishingly capable inside a well-defined frame. It can classify images at scale, summarize
+documents, detect anomalies, and route support tickets with real economic value. Yet the same system
+may fail on edge cases that a human would handle easily. This mismatch happens because statistical
+competence does not equal grounded understanding. Models respond to patterns in data and objectives
+in training. They do not automatically share human goals, context, or common sense.
+
+That limit matters because people project agency onto systems too quickly. A fluent interface creates the
+illusion of broad intelligence. But reliability depends on domain fit, evaluation quality, and guardrails. In
+high-stakes settings, teams should ask not only whether a system can do the task sometimes, but how it
+fails, how often it fails, whether those failures are visible, and who absorbs the cost when the model is
+wrong.
+
+Major subfields
+
+Machine learning is one major subfield, but AI also includes computer vision, natural language
+processing, robotics, planning, reasoning, and knowledge representation. Robotics deals with action in
+the physical world, where uncertainty, timing, and safety constraints are brutal. Planning focuses on
+choosing sequences of actions to reach a goal. Vision converts pixels into useful structure. Language
+systems handle text, dialogue, and semantic relationships. Knowledge-based systems represent explicit
+facts and rules.
+
+Different subfields have different success criteria. A chatbot can tolerate occasional awkward phrasing.
+An industrial robot may not tolerate a single unsafe motion. An autonomous vehicle must reason under
+severe uncertainty with moving agents and incomplete information. When people say AI is advancing
+fast, the statement is only meaningful if they specify which capability, under what conditions, and against
+what benchmark.
+Artificial Intelligence
+ Page 3
+
+Ethics, governance, and incentives
+
+Any serious discussion of AI must include governance. Models can reflect social bias, amplify bad
+incentives, or create opaque decision pathways. Privacy concerns arise when training data contains
+sensitive information. Labor concerns arise when automation changes workflows faster than institutions
+adapt. Security concerns arise when models can be misused for fraud, misinformation, or large-scale
+spam.
+
+Governance is not an enemy of innovation. It is part of competent system design. Clear accountability,
+red-team testing, audit logs, fallback procedures, and domain-specific review improve trustworthiness.
+The hard part is that institutions often adopt AI faster than they improve their measurement and
+oversight. That gap is where many avoidable failures come from.
+
+AI in products
+
+In product work, AI should serve a user need, not decorate a slide deck. Teams should ask whether a
+simpler rule-based system would solve the problem well enough, whether the model reduces or creates
+friction, and whether humans can intervene when the model is uncertain. The most effective AI products
+usually focus on narrow, repeated tasks where the model offers consistent leverage. The weakest ones
+promise general intelligence while quietly depending on brittle heuristics and human cleanup.
+
+For learners building RAG systems, AI is best seen as a toolbox. Retrieval, ranking, prompting,
+summarization, classification, and evaluation all sit inside this wider toolbox. The goal is not to worship
+the model. The goal is to design a system that behaves usefully under realistic constraints.
